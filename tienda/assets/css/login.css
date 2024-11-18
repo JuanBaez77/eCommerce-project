@@ -1,50 +1,52 @@
-*{
-    margin:0;
-    box-sizing: border-box;
-}
-.contenedorLogin{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 80vh;
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
 }
 
-.cajaLogin{
-    
-    padding: 2rem;
-    border: 1px solid rgba(128, 128, 128, 0.507);
-    border-radius: 0.3rem;
-    
-}
-
-.cajaLogin p{
-    color: rgb(63, 62, 62);
-    font-size: 3rem;
-    font-weight: 300;
-    padding: 2rem 12rem;
-       
-}
-
-.input-group input{
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    font-size: 1.6rem;
-    margin:1rem 0;
-    border: 1px solid  rgba(128, 128, 128, 0.5);
-    border-radius: 0.3rem;
-    padding:  0.8rem;
+    max-width: 400px;
+    font-family: "Raleway", sans-serif;
 }
-.btnAmarillo{
-    font-size: 1.6rem;
-    font-weight: 800;
-    letter-spacing: 0.2rem;
-   
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
     width: 100%;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    background-color: rgba(248, 187, 7, 1);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
 }
-/*Oculto la verificación de contraseña*/
-#reLoginPassword{
-    display: none;
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #50a474;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+}
+
+.login-form button:hover {
+    background-color: #3c8d5f;
 }
 
