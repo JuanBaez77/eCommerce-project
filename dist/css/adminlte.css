@@ -437,7 +437,7 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: #7777;
 }
 
 .list-unstyled {
@@ -12989,7 +12989,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 
 .sidebar-dark-warning .nav-sidebar > .nav-item > .nav-link.active,
 .sidebar-light-warning .nav-sidebar > .nav-item > .nav-link.active {
-  background-color: #ffc107;
+  background-color: #7777;
   color: #1f2d3d;
 }
 

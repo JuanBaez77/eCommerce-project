@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace</title>
+    <link rel="icon" href="../img/plantilla/icono.png">   
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/carrousel.css">
+    <link rel="stylesheet" href="assets/css/productos.css">
+    <link rel="stylesheet" href="assets/css/vistaProducto.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
+    <script type="module" src="app/tienda.js"></script>
+    <script src="app/carrousel.js"></script>
+    <script src="app/detalle.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar productos...">
+                <img src="img/lupa (1).jpeg" alt="Lupa" class="lupa-icon">
+            </div>
+            <div class="logo-section">
+                <img src="img/logo.png" alt="Logo de PURO Home Deco" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="tienda.htm">Inicio</a></li>
+                        <li><a href="products.htm">Productos</a></li>
+                        <li><a href="categorias.htm">Categorias</a></li>
+                        <li><a href="identidad.htm">Quienes Somos</a></li>
+                        <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-actions">
+                <button>Iniciar Sesión</button>
+                <span class="separator">|</span>
+                <button>Registrarse</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrousel -->
+    <section class="carrousel">
+        <div class="slides">
+            <div class="slide"><img src="img/banner1.jpeg" alt="banner 1"></div>
+            <div class="slide"><img src="img/banner2.jpeg" alt="banner 2"></div>
+            <div class="slide"><img src="img/banner3.jpeg" alt="banner 3"></div>
+        </div>
+        <div class="indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <a href="#muebles" class="category" style="background-image: url(img/aromas.jpeg);"></a>
+        <a href="#deco" class="category" style="background-image: url(img/deco.jpeg);"></a>
+        <a href="#textiles" class="category" style="background-image: url(img/textiles.jpeg);"></a>
+    </section>
+
+    <!-- Products -->
+    <section class="productos">
+        <div class="tarjeta-producto" onclick="mostrarDetalles('producto1')">
+            <img src="img/producto1.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <span class="etiqueta-oferta">OFERTA DEL DÍA</span>
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Juego de almohadas + manta...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto2.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-actual">$181.989</span>
+                </div>
+                <p class="nombre-producto">Cubre camas + almohadas...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto3.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <span class="etiqueta-oferta">OFERTA DEL DÍA</span>
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Alfombra de lino...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto4.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-actual">$181.989</span>
+                </div>
+                <p class="nombre-producto">cortina de lino...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto5.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-actual">$181.989</span>
+                </div>
+                <p class="nombre-producto">Juego de almohadas + manta...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto6.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-actual">$181.989</span>
+                </div>
+                <p class="nombre-producto">Alfombra + Juego de almohadas...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto7.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <span class="etiqueta-oferta">OFERTA DEL DÍA</span>
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Pie de cama...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto8.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Pie de cama...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto1.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <span class="etiqueta-oferta">OFERTA DEL DÍA</span>
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Juego de almohadas + manta...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto2.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Cubre camas + almohadas...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto3.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <span class="etiqueta-oferta">OFERTA DEL DÍA</span>
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Alfombra de lino...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto4.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">cortina de lino...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto5.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Juego de almohadas + manta...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto6.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Alfombra + Juego de almohadas...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto7.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <span class="etiqueta-oferta">OFERTA DEL DÍA</span>
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Pie de cama...</p>
+            </div>
+        </div> 
+        <div class="tarjeta-producto">
+            <img src="img/producto8.jpeg" alt="Producto" class="imagen-producto">
+            <div class="info-producto">
+                <div class="precio-producto">
+                    <span class="precio-anterior">$200.899</span>
+                    <span class="precio-actual">$181.989</span>
+                    <span class="descuento">30% OFF</span>
+                </div>
+                <p class="nombre-producto">Pie de cama...</p>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Detalle del producto -->
+    <section id="detalle-producto" class="detalle oculto">
+        <button class="cerrar" onclick="cerrarDetalles()">X</button>
+        <div class="detalle-contenido">
+            <img id="imagen-detalle" src="img/producto1.jpeg" alt="Producto Detalle">
+            <div class="detalle-info">
+                <h2 id="titulo-detalle">Batería Hudson Granito</h2>
+                <p id="precio-detalle">$207.409</p>
+                <p id="descripcion-detalle">Set de ollas antiadherentes 9 piezas</p>
+                <button class="boton-comprar">Comprar ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venajas -->
+    <section class="ventajas">
+        <div class="ventajas-item">
+            <img src="img/camion.jpeg" alt="Icono Envío">
+            <h3>ENVIAMOS TU COMPRA</h3>
+            <p>Entregas a todo el país</p>
+        </div>
+        <span class="separator-footer">|</span>
+        <div class="ventajas-item">
+            <img src="img/lupa (18).jpeg" alt="Icono Pago">
+            <h3>TODOS LOS MEDIOS DE PAGO</h3>
+            <p>Todas las tarjetas, transferencias y efectivo</p>
+        </div>
+        <span class="separator-footer">|</span>
+        <div class="ventajas-item">
+            <img src="img/candado.jpeg" alt="Icono Seguridad">
+            <h3>COMPRÁ CON SEGURIDAD</h3>
+            <p>Tus datos siempre protegidos</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="navegar">
+            <h3>NAVEGACIÓN</h3>
+            <ul>
+                <li><a href="index.htm">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="identidad.htm">Quiénes Somos</a></li>
+                <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+            </ul>
+        </section>
+
+        <section class="envio">
+            <h3>FORMAS DE ENVÍO</h3>
+            <img src="img/" alt="correo-argentino">
+        </section>
+
+        <section class="contact-info">
+            <h3>CONTACTANOS</h3>
+            <p>📞 +54 9 353 4590010</p>
+            <p>📧 lorem@gmail.com.ar</p>
+            <p>📍 Alberdi 62</p>
+        </section>
+
+        <section class="social-media">
+            <h3>REDES SOCIALES</h3>
+            <div class="icons">
+        </section>  
+</body>
+</html>
